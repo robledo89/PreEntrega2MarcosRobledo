@@ -1,0 +1,290 @@
+/* RESET  */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* GLOBALES */
+
+body {
+  background: rgb(214, 245, 231);
+  background-image: url("../images//pattern.png");
+  background-size: 25%;
+}
+
+header {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Merienda", cursive;
+  color: grey;
+  font-size: 55px;
+  padding: 20px 0px;
+}
+
+h2 {
+  font-family: "Merienda", cursive;
+  font-size: 26px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor {
+  width: 90%;
+  margin: 5% auto;
+  padding: 40px;
+  background: white;
+}
+
+.mapa {
+  padding: 10px 20px;
+}
+
+section {
+  padding: 5%;
+}
+
+/* MENU */
+
+nav {
+  padding: 40px;
+  float: right;
+}
+
+nav a {
+  width: 145px;
+  color: grey;
+  text-decoration: none;
+  padding: 12px 0px;
+  display: inline-block;
+  transition: all 0.2s;
+  border-right: solid 1px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.submenu {
+  width: 145px;
+  color: grey;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px 0px;
+  text-align: center;
+}
+
+.bordtrans {
+  border: none !important;
+}
+
+nav a:hover {
+  color: #68c197;
+  transition: all 0.8s ease-in;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+}
+
+.submenu a {
+  display: block;
+  border: none !important;
+}
+
+nav div {
+  display: inline-block;
+}
+
+nav div:hover .submenu {
+  display: block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* HOME - INICIO */
+
+.iconos article {
+  width: 200px;
+  margin: 15px;
+  display: inline-block;
+}
+
+.iconos article p {
+  text-align: center;
+}
+
+.iconos {
+  text-align: center;
+}
+
+.inicio {
+  margin: 20px 0px;
+}
+
+.flechita {
+  margin-top: 20px;
+}
+
+/* ACTIVIDADES */
+
+.actividades article {
+  width: 450px;
+  margin: 20px;
+  float: left;
+  text-align: center;
+}
+
+/* HABITACIONES */
+
+.hab {
+  float: left;
+  position: relative;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.hab:hover .texto {
+  opacity: 1;
+  left: 0;
+}
+
+.imag {
+  transition: all 0, 8s;
+  width: 450px;
+}
+
+.hab:hover imag {
+  width: 450px;
+}
+
+.texto {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0px;
+  position: absolute;
+  left: 450px;
+  height: 260px;
+  opacity: 0;
+  transition: all 0.3s;
+  top: 0px;
+  width: 450px;
+}
+
+.texto p,
+h2 {
+  text-align: center;
+}
+
+.texto h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* FORMULARIO */
+
+.tex {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  padding: 10px;
+  display: block;
+}
+
+form p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+}
+
+.campo_texto,
+textarea {
+  width: 200px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 3px 1px rgba(28, 219, 101, 0.2) inset;
+}
+
+.label_texto {
+  width: 90px;
+  text-align: right;
+}
+
+button {
+  background: #68c197;
+  color: white;
+  border: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+button:hover {
+  background: #528070;
+}
+
+.paraflotar {
+  width: 330px;
+  float: left;
+}
+
+.actividades h2 {
+  color: grey;
+}
+
+
+/* SLIDER */
+
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.slider ul {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  width: 300%;
+  animation: 0.5s infinite;
+  transition: opacity 0.5s;
+}
+
+.slider li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider img {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+/* FOOTER */
+
+.logosRedes {
+  margin: 10px 20px;
+}
+
+.logosRedes img{
+  width: 40px;
+}
+
+footer p {
+  /* display: inline; */
+  padding: 25px;
+}
+

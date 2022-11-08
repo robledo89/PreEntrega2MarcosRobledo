@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Relax</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+
+<body>
+  <div class="contenedor">
+    <header>
+      <a href="../index.html"><img src="../images/logo hotel.png" alt="" /></a>
+      <nav>
+        <a href="../index.html" class="activado">INICIO</a>
+        <a href="../pages/info.html">INFO</a>
+        <a href="../pages/habitaciones.html">HABITACIONES</a>
+        <div>
+          <a href="../pages/actividades.html">ACTIVIDADES</a>
+          <nav class="submenu">
+            <a href="#">Spa</a>
+            <a href="#">Golf</a>
+            <a href="#">Shows</a>
+            <a href="#">Niños</a>
+            <a href="#">Piscina</a>
+            <a href="#">Sauna</a>
+          </nav>
+        </div>
+        <div>
+          <a href="../pages/contacto.html">CONTACTO</a>
+        </div>
+      </nav>
+    </header>
+    <h1>Contacto</h1>
+    <div class="paraflotar">
+      <form action="" method="POST">
+        <input class="campo_texto" id="tx_name" type="text" name="nombre" maxlength="15" title="Escriba aquí su nombre"
+          placeholder="Escriba aquí su nombre" required />
+        <input class="campo_texto" id="tx_apellido" type="text" name="apellido" placeholder="Escriba aquí su apellido"
+          required />
+        <input class="campo_texto" id="tx_email" type="email" name="email" placeholder="Escriba aquí su email"
+          required />
+        <label class="tex">
+          <input type="checkbox" name="intereses" value="deportes" />
+          Desayuno
+        </label>
+        <label class="tex">
+          <input type="checkbox" name="intereses" value="animales" />
+          Garage
+        </label>
+        <label class="tex">
+          <input type="checkbox" name="intereses" value="tiempo_libre" />
+          Internet
+        </label>
+        <label class="tex">
+          <input type="radio" name="genero" value="masc" />
+          Negocio
+        </label>
+        <label class="tex">
+          <input type="radio" name="genero" value="fem" />
+          Placer
+        </label>
+        <label for="sl_pais"></label>
+        <select id="sl_pais" name="pais">
+          <option disabled selected>Elija su país</option>
+          <option value="AR">Argentina</option>
+          <option value="BR">Brasil</option>
+          <option value="PY">Paraguay</option>
+          <option value="UY">Uruguay</option>
+        </select>
+        <label for="tx_comentario"></label>
+        <textarea id="tx_comentario" name="comentario" placeholder="Escriba aquí su consulta"></textarea>
+        <button type="submit">Enviar formulario</button>
+        <button type="reset">Borrar</button>
+      </form>
+    </div>
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6545.47798150401!2d-55.038659!3d-34.8879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f88788c87de77%3A0xd76c10a8f9587cd0!2sIB%2C%2020003%20Departamento%20de%20Maldonado!5e0!3m2!1ses!2suy!4v1666311357744!5m2!1ses!2suy"
+        width="70%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- <div class="clearfix"></div> -->
+    <footer>
+      <img class="whpp" src="../images/redes-01.png" alt="" />
+      <img class="fb" src="../images/redes-02.png" alt="" />
+      <img class="insta" src="../images/redes-03.png" alt="" />
+      <p>
+        Costanera Laguna del Sauce Ruta Interbalnearia | Km 116 Punta del
+        Este, Uruguay
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
