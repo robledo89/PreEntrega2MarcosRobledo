@@ -84,9 +84,19 @@ nav a {
   border: none !important;
 }
 
-nav a:hover {
-  color: #68c197;
+/* nav a:hover {
+  color: #68c197;!important
   transition: all 0.8s ease-in;
+} */
+
+ /* HOVER DE SUB-MENÚ Y BLOQUEO HOVER EN MOBILE */
+
+@media only screen and (min-width: 768px){
+  .dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #d7f5e7;
+    transition: all 1s ease-in;
+  }
 }
 
 .submenu {
