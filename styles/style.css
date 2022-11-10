@@ -65,68 +65,26 @@ section {
 }
 
 .nav-link {
-  color: grey;
-  text-decoration: none;
+  color: #68c197;
   margin: 0rem 0.8rem;
   padding: 12px 12px;
-  display: inline-block;
-  transition: all 0.2s;
-  font-size: 16px;
-  justify-content: right;
 }
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: right;
 }
 
-.submenu {
-  width: 145px;
-  color: grey;
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 12px 0px;
-  text-align: center;
-}
-
-/* .bordtrans {
-  border: none !important;
-} */
-
-/* HOVER DE SUB-MENÚ Y BLOQUEO HOVER EN MOBILE */
-
-@media only screen and (min-width: 768px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    background-color: #d7f5e7;
-    transition: all 1s ease-in;
-  }
-  li {
-    border-right: none;
-  }
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-}
-
-.submenu a {
-  border: none !important;
-}
-
-nav div {
-  display: inline-block;
-}
-
-nav div:hover .submenu {
-  display: block;
-}
-
-.clearfix {
-  clear: both;
-}
-
 /* HOME - INICIO */
+
+.iconosHover {
+  transition: all 0.7s ease-in-out;
+}
+
+.iconosHover:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(1px 8px 8px rgba(6, 97, 62, 0.218));
+  background-image: url('images/Iconos-01hover.png');
+}
 
 .iconos article {
   width: 200px;
@@ -197,8 +155,7 @@ nav div:hover .submenu {
   width: 450px;
 }
 
-.texto p,
-h2 {
+.texto p, h2 {
   text-align: center;
 }
 
@@ -298,6 +255,18 @@ button:hover {
 }
 
 footer p {
-  /* display: inline; */
   padding: 25px;
+}
+
+/* HOVER DE SUB-MENÚ Y BLOQUEO HOVER EN MOBILE */
+
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #d7f5e7;
+    transition: all 1s ease-in;
+  }
+  .bordeParaNav {
+    border-right: none;
+  }
 }
