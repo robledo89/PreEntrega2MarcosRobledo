@@ -76,6 +76,19 @@ section {
   justify-content: right;
 }
 
+/* ANIMACION LOGO */
+
+@keyframes logoAnimado {
+  from {opacity: 0;}
+  to {opacity: 1}
+}
+
+.navbar-brand {
+  animation-name: logoAnimado;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+}
+
 /* HOME - INICIO */
 
 .iconosHover {
