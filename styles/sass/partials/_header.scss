@@ -1,0 +1,54 @@
+/* BORDE DE NAV Y HOVER */
+
+.bordeParaNav {
+    border-right: solid 1px $fontColor;
+}
+
+ul:hover {
+    a {
+        color: $primarioVerde;
+    }
+    .bordeParaNav{
+        border-right: solid 1px $colorBlanco;
+        transition-duration: 2s;
+    }
+}
+
+/* CUSTOMIZACIÓN DE CLASES BS DEL NAV */
+
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: none;
+}
+
+.nav-link {
+    color: $tercearioVerde;
+    margin: 0rem 0.8rem;
+    padding: 12px 12px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: right;
+}
+
+.navbar-brand {
+    animation-name: logoAnimado;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+        filter: drop-shadow(2px 4px 4px $secundarioVerde);
+        transition: all 0.9s ease-in-out;
+    }
+}
+
+/* ANIMACION LOGO */
+
+@keyframes logoAnimado {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

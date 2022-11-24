@@ -1,0 +1,46 @@
+/* CONTACTO */
+
+.contenedorForm{
+    padding: 5% 0;
+}
+
+.inputForm,
+textarea {
+    width: 15em;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid $primarioVerde;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 1px 1px $primarioVerde inset;
+    transition: all 0.6s ease-in;
+    &:hover {
+        background-color: $primarioVerde;
+        border-color: $secundarioVerde;
+    }
+}
+
+.textForm {
+    padding: 10px 0px;
+    display: block;
+}
+
+.pais{
+    padding: 0.4em 0.6em;
+    margin: 1em 0em;
+}
+
+button {
+    background: $primarioVerde;
+    color: $colorBlanco;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    &:hover {
+        background: #a9e7d1;
+    }    
+}
+
+.actividades h2 {
+    color: grey;
+}

@@ -1,0 +1,17 @@
+/* SECTION CON LOS 4 ICONOS Y SU HOVER */
+
+section {
+  p {
+    padding-top: 30px;
+  }
+}
+
+.iconosHover {
+  transition: all 0.7s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(3px 10px 8px $primarioVerde);
+  }
+}
+
+

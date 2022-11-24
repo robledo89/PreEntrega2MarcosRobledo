@@ -1,0 +1,27 @@
+/* SLIDER */
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider ul {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    width: 300%;
+    animation: 0.5s infinite;
+    transition: opacity 0.5s;
+  }
+  
+  .slider li {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .slider img {
+    width: 100%;
+    padding: 20px 0px;
+  }

@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* NORMALIZE */
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+/* RESET  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+/* GLOBALES */
+body {
+  background: #91e8c1;
+  background-image: url("/images/pattern.png"), linear-gradient(to bottom, #91e8c1, #0a4d417f);
+  background-size: 24%; }
+  body h1 {
+    font-family: "Merienda", cursive;
+    color: grey;
+    font-size: 55px;
+    padding: 20px 0px; }
+  body h2 {
+    font-family: "Merienda", cursive;
+    color: grey;
+    font-size: 40px;
+    padding: 20px 0px; }
+  body p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    padding: 20px 0px; }
+
+header {
+  font-family: "Open Sans", sans-serif; }
+
+/* PARTIALS */
+/* BORDE DE NAV Y HOVER */
+.bordeParaNav {
+  border-right: solid 1px grey; }
+
+ul:hover a {
+  color: #91e8c1; }
+
+ul:hover .bordeParaNav {
+  border-right: solid 1px white;
+  transition-duration: 2s; }
+
+/* CUSTOMIZACIÓN DE CLASES BS DEL NAV */
+.bg-light {
+  --bs-bg-opacity: 0;
+  background-color: none; }
+
+.nav-link {
+  color: #06563b;
+  margin: 0rem 0.8rem;
+  padding: 12px 12px; }
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: right; }
+
+.navbar-brand {
+  animation-name: logoAnimado;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out; }
+  .navbar-brand:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(2px 4px 4px #0a4d417f);
+    transition: all 0.9s ease-in-out; }
+
+/* ANIMACION LOGO */
+@keyframes logoAnimado {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* FOOTER */
+footer img {
+  width: 40px; }
+
+footer p {
+  padding: 25px; }
+
+.logosRedes {
+  margin: 10px 20px; }
+
+/* SECTION CON LOS 4 ICONOS Y SU HOVER */
+section p {
+  padding-top: 30px; }
+
+.iconosHover {
+  transition: all 0.7s ease-in-out; }
+  .iconosHover:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(3px 10px 8px #91e8c1); }
+
+/* HABITACIONES */
+#sectionHab {
+  padding: 0%; }
+
+.card {
+  border-style: none;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 1.5em; }
+  .card h2 {
+    padding: 0.2em 0em 0.3em 0em;
+    font-size: 2.2em; }
+  .card p {
+    padding: 0em 0em;
+    margin: 0.4em 0em;
+    font-size: 1.4em; }
+  .card:hover {
+    scale: 1.02;
+    filter: drop-shadow(3px 10px 8px #91e8c1); }
+    .card:hover img {
+      opacity: 0.7; }
+
+@media only screen and (max-width: 768px) {
+  #sectionHab {
+    margin: 0em 0.4em; } }
+
+@media only screen and (max-width: 576px) {
+  #sectionHab {
+    margin: 0em 1em; } }
+
+/* ACTIVIDADES */
+.flechita {
+  margin-top: 10px;
+  width: 2em; }
+
+.actividades {
+  padding: 1em; }
+
+/* CONTACTO */
+.contenedorForm {
+  padding: 5% 0; }
+
+.inputForm,
+textarea {
+  width: 15em;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #91e8c1;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 1px 1px #91e8c1 inset;
+  transition: all 0.6s ease-in; }
+  .inputForm:hover,
+  textarea:hover {
+    background-color: #91e8c1;
+    border-color: #0a4d417f; }
+
+.textForm {
+  padding: 10px 0px;
+  display: block; }
+
+.pais {
+  padding: 0.4em 0.6em;
+  margin: 1em 0em; }
+
+button {
+  background: #91e8c1;
+  color: white;
+  border: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 5px; }
+  button:hover {
+    background: #a9e7d1; }
+
+.actividades h2 {
+  color: grey; }
+
+/* SLIDER */
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  scroll-snap-type: x mandatory; }
+
+.slider ul {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  width: 300%;
+  animation: 0.5s infinite;
+  transition: opacity 0.5s; }
+
+.slider li {
+  list-style: none;
+  width: 100%; }
+
+.slider img {
+  width: 100%;
+  padding: 20px 0px; }
+
+/* CONTENEDOR PRINCIPAL, MAPA, SECTION */
+.contenedor {
+  width: 90%;
+  margin: 5% auto;
+  padding: 2%;
+  background: white; }
+  .contenedor .mapa {
+    padding: 10px 20px; }
+  .contenedor section {
+    padding: 5%; }
+
+/* BLOQUEO HOVER EN MOBILE */
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #d7f5e7;
+    transition: all 1s ease-in; } }
+
+/* BREAKPOINT DE MAX 768 CON CAMBIOS DE ESTILOS */
+@media only screen and (max-width: 768px) {
+  .contenedor h1 {
+    font-size: 40px;
+    padding: 18px 15px; }
+  .contenedor h2 {
+    font-size: 35px;
+    padding: 18px 15px; }
+  .contenedor p {
+    font-size: 18px;
+    padding: 0px 15px; }
+  .navbar-nav:hover .bordeParaNav {
+    border-right: none; }
+  .logosRedes {
+    margin: 30px 12px; }
+  .textoFooter p {
+    font-size: 14px;
+    padding: 25px; }
+  .navbar-brand img {
+    width: 70px; }
+  .inputForm {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  textarea {
+    width: 100%;
+    display: block; }
+  .buttonForm {
+    width: 90%; }
+  .textForm {
+    text-align: center; } }
+
+@media only screen and (max-width: 992px) {
+  .bordeParaNav {
+    border-right: none; }
+  .navbar-nav:hover .bordeParaNav {
+    border-right: none; } }

@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+
+/* RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* GLOBALES */
+body {
+    background: $primarioVerde;
+    background-image: url("/images/pattern.png"), linear-gradient(to bottom, $primarioVerde, $secundarioVerde);
+    background-size: 24%;
+    h1 {
+        font-family: $fontItalic;
+        color: $fontColor;
+        font-size: $titulos;
+        padding: $padding20cero;
+    }
+    h2 {
+        font-family: $fontItalic;
+        color: $fontColor;
+        font-size: $subTitulos;
+        padding: $padding20cero;
+    }
+
+    p {
+        font-family: $fontSans;
+        font-size: $parrafos;
+        padding: $padding20cero;
+    }
+}
+
+header {
+    font-family: $fontSans;
+}
