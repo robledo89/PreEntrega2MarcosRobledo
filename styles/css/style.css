@@ -12,7 +12,7 @@
 /* GLOBALES */
 body {
   background: #91e8c1;
-  background-image: url("/images/pattern.png"), linear-gradient(to bottom, #91e8c1, #0a4d417f);
+  background-image: url("/images/pattern.png");
   background-size: 24%; }
   body h1 {
     font-family: "Merienda", cursive;
@@ -192,7 +192,7 @@ button {
   width: 100%;
   padding: 20px 0px; }
 
-/* CONTENEDOR PRINCIPAL, MAPA, SECTION */
+/* CONTENEDOR PRINCIPAL, MAPA, SECTION  */
 .contenedor {
   width: 90%;
   margin: 5% auto;
