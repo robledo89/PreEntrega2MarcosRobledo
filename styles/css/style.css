@@ -14,9 +14,8 @@
 
 /* GLOBALES */
 body {
-  background: #91e8c1;
-  background-image: url("/images/pattern.png"), linear-gradient(to bottom, #91e8c1, #0a4d417f);
-  background-size: 26%; }
+  background-image: url("../../images/pattern.png"), linear-gradient(to bottom, #91e8c1, #5dab88, #01301b);
+  background-size: 25%; }
   body h1 {
     font-family: "Merienda", cursive;
     color: grey;
@@ -31,6 +30,9 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
     padding: 20px 0px; }
+  body ::selection {
+    color: #01301b;
+    background-color: #91e8c1; }
 
 header {
   font-family: "Open Sans", sans-serif; }

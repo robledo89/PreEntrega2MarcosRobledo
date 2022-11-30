@@ -12,9 +12,8 @@
 
 /* GLOBALES */
 body {
-    background: $primarioVerde;
-    background-image: url("/images/pattern.png"), linear-gradient(to bottom, $primarioVerde, $secundarioVerde);
-    background-size: 26%;
+    background-image: url("../../images/pattern.png"), linear-gradient(to bottom, $primarioVerde, $cuaternarioVerde, $quintoVerde);
+    background-size: 25%;
     h1 {
         font-family: $fontItalic;
         color: $fontColor;
@@ -27,14 +26,18 @@ body {
         font-size: $subTitulos;
         padding: $padding20cero;
     }
-
     p {
         font-family: $fontSans;
         font-size: $parrafos;
         padding: $padding20cero;
+    }
+    ::selection {
+        color: $quintoVerde;
+        background-color: $primarioVerde;
     }
 }
 
 header {
     font-family: $fontSans;
 }
+
