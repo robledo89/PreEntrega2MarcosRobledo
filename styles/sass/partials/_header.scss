@@ -1,4 +1,4 @@
-/* BORDE DE NAV Y HOVER */
+/* ---- PARTIAL HEADER - BORDE DE NAV Y HOVER ---- */
 
 .bordeParaNav {
     border-right: solid 1px $fontColor;
@@ -37,9 +37,14 @@ ul:hover {
     animation-timing-function: ease-in-out;
     &:hover{
         transform: scale(1.05);
-        filter: drop-shadow(2px 4px 4px $secundarioVerde);
+        filter: drop-shadow(2px 4px 4px $cuaternarioVerde);
         transition: all 0.9s ease-in-out;
     }
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: $colorBlanco;
+    background-color: $secundarioVerde;
 }
 
 /* ANIMACION LOGO */

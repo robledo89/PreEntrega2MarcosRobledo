@@ -1,19 +1,22 @@
 @charset "UTF-8";
-/* VARIABLES */
-/* NORMALIZE */
+/* ---- SCSS ORIGEN ---- */
+/* ORIGEN - VARIABLES */
+/* ---- MISC VARIABLES ---- */
+/* ORIGEN - NORMALIZE */
+/* ---- MISC NORMALIZE ---- */
 @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
-/* RESET  */
+/* RESET */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: sans-serif; }
 
 /* GLOBALES */
 body {
   background: #91e8c1;
-  background-image: url("/images/pattern.png");
-  background-size: 25%; }
+  background-image: url("/images/pattern.png"), linear-gradient(to bottom, #91e8c1, #0a4d417f);
+  background-size: 26%; }
   body h1 {
     font-family: "Merienda", cursive;
     color: grey;
@@ -32,8 +35,8 @@ body {
 header {
   font-family: "Open Sans", sans-serif; }
 
-/* PARTIALS */
-/* BORDE DE NAV Y HOVER */
+/* ORIGEN - PARTIALS */
+/* ---- PARTIAL HEADER - BORDE DE NAV Y HOVER ---- */
 .bordeParaNav {
   border-right: solid 1px grey; }
 
@@ -63,8 +66,12 @@ ul:hover .bordeParaNav {
   animation-timing-function: ease-in-out; }
   .navbar-brand:hover {
     transform: scale(1.05);
-    filter: drop-shadow(2px 4px 4px #0a4d417f);
+    filter: drop-shadow(2px 4px 4px #5dab88);
     transition: all 0.9s ease-in-out; }
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: white;
+  background-color: #0a4d417f; }
 
 /* ANIMACION LOGO */
 @keyframes logoAnimado {
@@ -73,7 +80,7 @@ ul:hover .bordeParaNav {
   to {
     opacity: 1; } }
 
-/* FOOTER */
+/* ---- PARTIAL FOOTER ---- */
 footer img {
   width: 40px; }
 
@@ -82,6 +89,18 @@ footer p {
 
 .logosRedes {
   margin: 10px 20px; }
+
+/* ---- PARTIAL HOME-INICIO ---- */
+/* CONTENEDOR PRINCIPAL, MAPA, SECTION  */
+.contenedor {
+  width: 95%;
+  margin: 5% auto;
+  padding: 2%;
+  background: white; }
+  .contenedor .mapa {
+    padding: 10px 20px; }
+  .contenedor section {
+    padding: 5%; }
 
 /* SECTION CON LOS 4 ICONOS Y SU HOVER */
 section p {
@@ -93,7 +112,7 @@ section p {
     transform: scale(1.05);
     filter: drop-shadow(3px 10px 8px #91e8c1); }
 
-/* HABITACIONES */
+/* ---- PARTIAL HABITACIONES ---- */
 #sectionHab {
   padding: 0%; }
 
@@ -122,7 +141,7 @@ section p {
   #sectionHab {
     margin: 0em 1em; } }
 
-/* ACTIVIDADES */
+/* ---- PARTIAL ACTIVIDADES ---- */
 .flechita {
   margin-top: 10px;
   width: 2em; }
@@ -130,46 +149,53 @@ section p {
 .actividades {
   padding: 1em; }
 
-/* CONTACTO */
+/* ---- PARTIAL CONTACTO ---- */
 .contenedorForm {
   padding: 5% 0; }
 
-.inputForm,
-textarea {
-  width: 15em;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #91e8c1;
-  margin-bottom: 15px;
-  box-shadow: 0px 0px 1px 1px #91e8c1 inset;
+.inputForm, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 0.5em;
+  border-color: #91e8c1;
+  margin: 15px 0px;
+  box-shadow: 0px 0px 0.5px 0.5px #91e8c1 inset;
   transition: all 0.6s ease-in; }
-  .inputForm:hover,
-  textarea:hover {
+  .inputForm:hover, textarea:hover {
     background-color: #91e8c1;
     border-color: #0a4d417f; }
 
 .textForm {
-  padding: 10px 0px;
+  padding: 10px 5px;
   display: block; }
 
 .pais {
+  width: 100%;
   padding: 0.4em 0.6em;
-  margin: 1em 0em; }
+  margin: 1em 0em;
+  border-radius: 0.5em;
+  transition: all 0.6s ease-in; }
+  .pais:hover {
+    background: #91e8c1;
+    font-style: italic; }
 
 button {
   background: #91e8c1;
   color: white;
   border: none;
   display: inline-block;
-  padding: 10px;
-  margin: 5px; }
+  padding: 10px 0;
+  margin: 5px 0;
+  border-radius: 0.5em;
+  transition: all 0.6s ease-in; }
   button:hover {
-    background: #a9e7d1; }
+    background: #06563b;
+    font-style: italic; }
 
 .actividades h2 {
   color: grey; }
 
-/* SLIDER */
+/* ---- PARTIAL SLIDER ---- */
 .slider {
   width: 100%;
   margin: auto;
@@ -192,22 +218,12 @@ button {
   width: 100%;
   padding: 20px 0px; }
 
-/* CONTENEDOR PRINCIPAL, MAPA, SECTION  */
-.contenedor {
-  width: 90%;
-  margin: 5% auto;
-  padding: 2%;
-  background: white; }
-  .contenedor .mapa {
-    padding: 10px 20px; }
-  .contenedor section {
-    padding: 5%; }
-
+/* ---- PARTIAL MEDIA QUERIES ---- */
 /* BLOQUEO HOVER EN MOBILE */
 @media only screen and (min-width: 768px) {
   .dropdown:hover .dropdown-menu {
     display: block;
-    background-color: #d7f5e7;
+    background-color: #5dab88;
     transition: all 1s ease-in; } }
 
 /* BREAKPOINT DE MAX 768 CON CAMBIOS DE ESTILOS */
@@ -238,7 +254,9 @@ button {
     width: 100%;
     display: block; }
   .buttonForm {
-    width: 90%; }
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 3%; }
   .textForm {
     text-align: center; } }
 

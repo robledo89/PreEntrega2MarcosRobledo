@@ -1,18 +1,17 @@
-/* CONTACTO */
+/* ---- PARTIAL CONTACTO ---- */
 
 .contenedorForm{
     padding: 5% 0;
 }
 
-.inputForm,
-textarea {
-    width: 15em;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid $primarioVerde;
-    margin-bottom: 15px;
-    box-shadow: 0px 0px 1px 1px $primarioVerde inset;
-    transition: all 0.6s ease-in;
+.inputForm, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: $borders;
+    border-color: $primarioVerde;
+    margin: 15px 0px;
+    box-shadow: 0px 0px 0.5px 0.5px $primarioVerde inset;
+    transition: $animaBotones;
     &:hover {
         background-color: $primarioVerde;
         border-color: $secundarioVerde;
@@ -20,13 +19,20 @@ textarea {
 }
 
 .textForm {
-    padding: 10px 0px;
+    padding: 10px 5px;
     display: block;
 }
 
 .pais{
+    width: 100%;
     padding: 0.4em 0.6em;
     margin: 1em 0em;
+    border-radius: $borders;
+    transition: $animaBotones;
+    &:hover {
+        background: $primarioVerde;
+        font-style: italic;
+    }    
 }
 
 button {
@@ -34,10 +40,13 @@ button {
     color: $colorBlanco;
     border: none;
     display: inline-block;
-    padding: 10px;
-    margin: 5px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-radius: $borders;
+    transition: $animaBotones;
     &:hover {
-        background: #a9e7d1;
+        background: $tercearioVerde;
+        font-style: italic;
     }    
 }
 

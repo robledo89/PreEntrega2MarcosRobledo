@@ -1,9 +1,11 @@
+/* ---- MISC NORMALIZE ---- */
+
 @import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
 
-/* RESET  */
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -11,8 +13,8 @@
 /* GLOBALES */
 body {
     background: $primarioVerde;
-    background-image: url('/images/pattern.png'), linear-gradient(to bottom, $primarioVerde, $secundarioVerde);
-    background-size: 25%;
+    background-image: url("/images/pattern.png"), linear-gradient(to bottom, $primarioVerde, $secundarioVerde);
+    background-size: 26%;
     h1 {
         font-family: $fontItalic;
         color: $fontColor;
