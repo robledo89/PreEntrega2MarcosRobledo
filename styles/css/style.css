@@ -114,6 +114,10 @@ section p {
     transform: scale(1.05);
     filter: drop-shadow(3px 10px 8px #91e8c1); }
 
+/* SLIDER */
+.carousel button:hover {
+  background: none; }
+
 /* ---- PARTIAL HABITACIONES ---- */
 #sectionHab {
   padding: 0%; }
@@ -198,27 +202,23 @@ button {
   color: grey; }
 
 /* ---- PARTIAL SLIDER ---- */
-.slider {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-  scroll-snap-type: x mandatory; }
+#carouselHome .controlesSlider:hover {
+  transition: transform 2s ease-in-out, opacity 0.5s ease-in-out; }
+  #carouselHome .controlesSlider:hover span {
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #91e8c1;
+    border-radius: 100%; }
 
-.slider ul {
-  padding: 0;
-  margin: auto;
-  display: flex;
-  width: 300%;
-  animation: 0.5s infinite;
-  transition: opacity 0.5s; }
+.carousel-indicators {
+  color: #91e8c1; }
 
-.slider li {
-  list-style: none;
-  width: 100%; }
+.carousel-indicators .active {
+  background-color: #5dab88; }
 
-.slider img {
-  width: 100%;
-  padding: 20px 0px; }
+.slide {
+  transition: transform transform 2s ease-in-out, opacity 0.5s ease-in-out ease-in-out;
+  transition-duration: transform 2s ease-in-out, opacity 0.5s ease-in-out; }
 
 /* ---- PARTIAL MEDIA QUERIES ---- */
 /* BLOQUEO HOVER EN MOBILE */

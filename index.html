@@ -81,18 +81,32 @@
       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
       qui officia deserunt mollit anim id est laborum.
     </p>
-    <div class="slider">
-      <ul>
-        <li>
-          <img src="images/slider-01.png" alt="Piscina Foto 1"/>
-        </li>
-        <li>
-          <img src="images/slider-02.png" alt="Piscina Foto 2"/>
-        </li>
-        <li>
-          <img src="images/slider-03.png" alt="Piscina Foto 3"/>
-        </li>
-      </ul>
+    <!-- SLIDER COROUSEL -->
+    <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="$carousel-transition-duration">
+          <img src="images/slider-01.png" class="d-block w-100" alt="Piscina Foto 1">
+        </div>
+        <div class="carousel-item" data-bs-interval="$carousel-transition-duration">
+          <img src="images/slider-02.png" class="d-block w-100" alt="Piscina Foto 2">
+        </div>
+        <div class="carousel-item" data-bs-interval="$carousel-transition-duration">
+          <img src="images/slider-03.png" class="d-block w-100" alt="Piscina Foto 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev controlesSlider" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next controlesSlider" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <!-- SECTION CON LOS 4 ICONOS -->
     <section class="row">
