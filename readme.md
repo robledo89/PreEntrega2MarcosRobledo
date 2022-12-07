@@ -5,7 +5,7 @@
 
 **Web para hotel ficticio llamado "Hotel Relax - Punta del Este"**
 
-__ ::: Web-site con home principal (index.html) y 4 secciones ::: __
+__Web-site con home principal (index.html) y 4 secciones__
 
 + Home (index.html)
 + Info
