@@ -14,18 +14,6 @@
 body {
     background-image: url("../../images/pattern.png"), linear-gradient(to bottom, $primarioVerde, $cuaternarioVerde, $quintoVerde);
     background-size: 25%;
-    h1 {
-        font-family: $fontItalic;
-        color: $fontColor;
-        font-size: $titulos;
-        padding: $padding20cero;
-    }
-    h2 {
-        font-family: $fontItalic;
-        color: $fontColor;
-        font-size: $subTitulos;
-        padding: $padding20cero;
-    }
     p {
         font-family: $fontSans;
         font-size: $parrafos;
@@ -40,4 +28,22 @@ body {
 header {
     font-family: $fontSans;
 }
+
+/* MIXINS */
+
+@mixin mixinH1 {
+    font-family: $fontItalic;
+    color: $fontColor;
+    font-size: $titulos;
+    padding: $padding20cero;
+}
+
+@mixin mixinH2 {
+    font-family: $fontItalic;
+    color: $fontColor;
+    font-size: $subTitulos;
+    padding: $padding20cero;
+}
+
+
 

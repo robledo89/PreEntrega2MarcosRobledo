@@ -6,6 +6,16 @@
 /* ORIGEN - NORMALIZE */
 @import "./misc/normalize";
 
+/* INCLUDE DE MIXINS */
+
+h1{
+    @include mixinH1
+}
+
+h2{
+    @include mixinH2
+}
+
 /* ORIGEN - PARTIALS */
 @import "./partials/header";
 @import "./partials/footer";

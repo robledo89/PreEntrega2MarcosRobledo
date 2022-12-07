@@ -16,16 +16,6 @@
 body {
   background-image: url("../../images/pattern.png"), linear-gradient(to bottom, #91e8c1, #5dab88, #01301b);
   background-size: 25%; }
-  body h1 {
-    font-family: "Merienda", cursive;
-    color: grey;
-    font-size: 55px;
-    padding: 20px 0px; }
-  body h2 {
-    font-family: "Merienda", cursive;
-    color: grey;
-    font-size: 40px;
-    padding: 20px 0px; }
   body p {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
@@ -36,6 +26,20 @@ body {
 
 header {
   font-family: "Open Sans", sans-serif; }
+
+/* MIXINS */
+/* INCLUDE DE MIXINS */
+h1 {
+  font-family: "Merienda", cursive;
+  color: grey;
+  font-size: 55px;
+  padding: 20px 0px; }
+
+h2 {
+  font-family: "Merienda", cursive;
+  color: grey;
+  font-size: 40px;
+  padding: 20px 0px; }
 
 /* ORIGEN - PARTIALS */
 /* ---- PARTIAL HEADER - BORDE DE NAV Y HOVER ---- */
