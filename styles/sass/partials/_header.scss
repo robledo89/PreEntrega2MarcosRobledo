@@ -8,7 +8,7 @@ ul:hover {
     a {
         color: $primarioVerde;
     }
-    .bordeParaNav{
+    .bordeParaNav {
         border-right: solid 1px $colorBlanco;
         transition-duration: 2s;
     }
@@ -31,23 +31,30 @@ ul:hover {
     justify-content: right;
 }
 
+.navbar-toggler:hover {
+    text-decoration: none;
+    background-color: $primarioVerde;
+}
+
 .navbar-brand {
     animation-name: logoAnimado;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
-    &:hover{
-        transform: scale(1.05);
-        filter: drop-shadow(2px 4px 4px $cuaternarioVerde);
-        transition: all 0.9s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03);
+        filter: drop-shadow(1px 4px 3px $cuaternarioVerde);
+        transition: all 0.8s ease-in-out;
     }
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     color: $colorBlanco;
     background-color: $secundarioVerde;
 }
 
-/* ANIMACION LOGO */
+/* KEYFRAMES PARA ANIMACION LOGO */
 
 @keyframes logoAnimado {
     from {

@@ -1,6 +1,6 @@
 /* ---- PARTIAL SLIDER ---- */
 
-#carouselHome .controlesSlider:hover {
+#carouselHotel .controlesSlider:hover {
   transition: $carousel-transition-duration;
   span {
     width: 2.2em;
@@ -20,5 +20,4 @@
 
 .slide {
   transition: $carousel-transition;
-  transition-duration: $carousel-transition-duration;
 }

@@ -62,20 +62,25 @@ ul:hover .bordeParaNav {
 .navbar-expand-lg .navbar-collapse {
   justify-content: right; }
 
+.navbar-toggler:hover {
+  text-decoration: none;
+  background-color: #91e8c1; }
+
 .navbar-brand {
   animation-name: logoAnimado;
   animation-duration: 2s;
   animation-timing-function: ease-in-out; }
   .navbar-brand:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(2px 4px 4px #5dab88);
-    transition: all 0.9s ease-in-out; }
+    transform: scale(1.03);
+    filter: drop-shadow(1px 4px 3px #5dab88);
+    transition: all 0.8s ease-in-out; }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
   color: white;
   background-color: #0a4d417f; }
 
-/* ANIMACION LOGO */
+/* KEYFRAMES PARA ANIMACION LOGO */
 @keyframes logoAnimado {
   from {
     opacity: 0; }
@@ -83,14 +88,28 @@ ul:hover .bordeParaNav {
     opacity: 1; } }
 
 /* ---- PARTIAL FOOTER ---- */
-footer img {
-  width: 40px; }
-
-footer p {
-  padding: 25px; }
+footer {
+  padding-top: 2.4em; }
+  footer img {
+    width: 40px; }
+  footer p {
+    padding: 25px; }
+  footer a:hover {
+    filter: drop-shadow(1px 3px 3px grey);
+    animation: popRedes 0.8s ease-in-out 1; }
 
 .logosRedes {
   margin: 10px 20px; }
+
+@keyframes popRedes {
+  25% {
+    transform: scale(0.95); }
+  75% {
+    transform: scale(1.15); }
+  90% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
 
 /* ---- PARTIAL HOME-INICIO ---- */
 /* CONTENEDOR PRINCIPAL, MAPA, SECTION  */
@@ -101,8 +120,18 @@ footer p {
   background: white; }
   .contenedor .mapa {
     padding: 10px 20px; }
-  .contenedor section {
-    padding: 5%; }
+
+.mapaCapa {
+  filter: saturate(0%);
+  opacity: 0.6;
+  padding: 0;
+  transition: all 0.6s ease-in; }
+  .mapaCapa:hover {
+    opacity: 1;
+    filter: saturate(110%); }
+
+section {
+  padding: 5%; }
 
 /* SECTION CON LOS 4 ICONOS Y SU HOVER */
 section p {
@@ -154,6 +183,17 @@ section p {
 
 .actividades {
   padding: 1em; }
+  .actividades:hover {
+    background-color: #e6fff3; }
+    .actividades:hover img {
+      filter: saturate(110%); }
+    .actividades:hover .flechita {
+      transform: rotateZ(180deg);
+      scale: 0.9;
+      filter: drop-shadow(1px 2px 3px grey);
+      transition: all 0.6s ease-in; }
+  .actividades {
+    filter: saturate(25%); }
 
 /* ---- PARTIAL CONTACTO ---- */
 .contenedorForm {
@@ -202,9 +242,9 @@ button {
   color: grey; }
 
 /* ---- PARTIAL SLIDER ---- */
-#carouselHome .controlesSlider:hover {
-  transition: transform 2s ease-in-out, opacity 0.5s ease-in-out; }
-  #carouselHome .controlesSlider:hover span {
+#carouselHotel .controlesSlider:hover {
+  transition: 5s ease, opacity 0.5s ease-in-out; }
+  #carouselHotel .controlesSlider:hover span {
     width: 2.2em;
     height: 2.2em;
     background-color: #91e8c1;
@@ -217,8 +257,7 @@ button {
   background-color: #5dab88; }
 
 .slide {
-  transition: transform transform 2s ease-in-out, opacity 0.5s ease-in-out ease-in-out;
-  transition-duration: transform 2s ease-in-out, opacity 0.5s ease-in-out; }
+  transition: transform 5s ease, opacity 0.5s ease-in-out; }
 
 /* ---- PARTIAL MEDIA QUERIES ---- */
 /* BLOQUEO HOVER EN MOBILE */

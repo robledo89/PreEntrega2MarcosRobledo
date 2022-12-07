@@ -6,13 +6,25 @@
   width: 95%;
   margin: 5% auto;
   padding: 2%;
-  background: white;
+  background: $colorBlanco;
   .mapa {
-      padding: 10px 20px;
+    padding: 10px 20px;
   }
-  section {
-      padding: 5%;
+}
+
+.mapaCapa {
+  filter: saturate(0%);
+  opacity: 0.6;
+  padding: 0;
+  transition: $animaBotones;
+  &:hover {
+    opacity: 1;
+    filter: saturate(110%);
   }
+}
+
+section {
+  padding: 5%;
 }
 
 /* SECTION CON LOS 4 ICONOS Y SU HOVER */
@@ -33,9 +45,6 @@ section {
 
 /* SLIDER */
 
-.carousel button:hover{
+.carousel button:hover {
   background: none;
 }
-
-
-

@@ -8,6 +8,7 @@ $cuaternarioVerde: #5dab88;
 $quintoVerde: #01301b;
 $fontColor: grey;
 $colorBlanco: white;
+$fondoVerdeClaro: #e6fff3;
 
 // FONTS
 $fontItalic: "Merienda", cursive;
@@ -25,5 +26,5 @@ $padding0: 0px;
 // OTROS
 $borders: 0.5em;
 $animaBotones: all 0.6s ease-in;
-$carousel-transition-duration: transform 2s ease-in-out, opacity 0.5s ease-in-out;
-$carousel-transition: transform $carousel-transition-duration ease-in-out; 
+$carousel-transition-duration: 5s ease, opacity 0.5s ease-in-out;
+$carousel-transition: transform $carousel-transition-duration; 
