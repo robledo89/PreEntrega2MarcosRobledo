@@ -27,7 +27,7 @@ body {
 header {
   font-family: "Open Sans", sans-serif; }
 
-/* MIXINS */
+/* DECARACIÓN  MIXINS */
 /* INCLUDE DE MIXINS */
 h1 {
   font-family: "Merienda", cursive;
@@ -128,7 +128,6 @@ footer {
 .mapaCapa {
   filter: saturate(0%);
   opacity: 0.6;
-  padding: 0;
   transition: all 0.6s ease-in; }
   .mapaCapa:hover {
     opacity: 1;

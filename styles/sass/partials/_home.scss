@@ -15,7 +15,6 @@
 .mapaCapa {
   filter: saturate(0%);
   opacity: 0.6;
-  padding: 0;
   transition: $animaBotones;
   &:hover {
     opacity: 1;
