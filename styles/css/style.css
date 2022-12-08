@@ -53,7 +53,10 @@ ul:hover .bordeParaNav {
   border-right: solid 1px white;
   transition-duration: 2s; }
 
-a:hover {
+.navbar-brand:hover {
+  border: none; }
+
+header a:hover {
   border-bottom: solid 1px #5dab88; }
 
 /* CUSTOMIZACIÓN DE CLASES BS DEL NAV */

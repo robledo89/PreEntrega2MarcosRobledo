@@ -13,12 +13,13 @@ ul:hover {
         transition-duration: 2s;
     }
 }
-
-a:hover{
-    border-bottom: solid 1px $cuaternarioVerde;
+.navbar-brand:hover {
+    border: none;
 }
 
-
+header a:hover {
+    border-bottom: solid 1px $cuaternarioVerde;
+}
 
 /* CUSTOMIZACIÓN DE CLASES BS DEL NAV */
 
