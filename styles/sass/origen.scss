@@ -8,12 +8,12 @@
 
 /* INCLUDE DE MIXINS */
 
-h1{
-    @include mixinH1
+h1 {
+    @include mixinH1;
 }
 
-h2{
-    @include mixinH2
+h2 {
+    @include mixinH2;
 }
 
 /* ORIGEN - PARTIALS */
@@ -25,5 +25,3 @@ h2{
 @import "./partials/contacto";
 @import "./partials/slider";
 @import "./partials/mediaqueries";
-
-
